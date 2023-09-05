@@ -1,0 +1,17 @@
+{
+  "name": "git-workshop",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+
+  },
+  "scripts": {
+    "start": "http-server -c-1"
+  },
+  "eslintConfig": {
+
+  },
+  "browserslist": {
+
+  }
+}

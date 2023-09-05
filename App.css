@@ -1,0 +1,54 @@
+#usersList {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 100%;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.userBox {
+   height: 5em;
+   width: 20em;
+   padding: 2em;
+   display: flex;
+   flex-direction: row;
+   align-items:center;
+   border-radius: 12px;
+   border-width: 1px;
+   margin-bottom: 1em;
+   margin-right: 1em;
+   background-color: white;
+   color: black;
+}
+.userImage {
+   height: 5em;
+   width: 5em;
+   border-radius: 50%;
+}
+.userName {
+   size: 2em;
+}
+.ligth {
+  size: 1.7em;
+  color: darkslategrey;
+}
+
+.data {
+  padding-left: .5em;
+}
+
+body {
+   background-color: cornflowerblue;
+   color:white;
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+   padding:4em;
+}
+
+.greyLoad {
+   background-color: darkgray;
+}
+
+.voidText {
+   height: 2em;
+   width: 50%;
+}

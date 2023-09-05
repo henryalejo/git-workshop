@@ -40,6 +40,28 @@ const App = () => {
   return (
     <div className="App">
       <h1>The Social Network</h1>
+      {users.length > 0 && <div id="usersList">
+        {users.map((user, index) => (
+           <div class="userBox">
+            {/* Update user card to display: image, complete name, country and city */}
+            <img src={`https://randomuser.me/api/portraits/med/men/12.jpg${''}`} class="userImage"/>
+            <div class="data">
+              <p class="userName">{`Oskar${''} Roussel${''}`}</p>
+              <p class="ligth">{`México${''}, ${user.location.city}`}</p>
+            </div>
+          </div>
+          ))
+        }
+      </div>
+      }
+      {/* Loader to show until we get the users */}
+      {users.length <= 0 &&    <div id="usersList">
+          <div id="userNumber" class="userBox">
+              <div class="userImage greyLoad"></div>
+              <p class="userName greyLoad voidText"></p>
+          </div>
+      </div>
+      }  
     </div>
   );
 }
